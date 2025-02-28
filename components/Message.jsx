@@ -22,7 +22,7 @@ export const Message = ({
     <div className={`flex ${isCurrentUser ? "justify-end" : "justify-start"}  gap-3`}>
       {/* Avatar */}
       {!isCurrentUser && (
-        <Avatar style={{ backgroundColor: `hsl(${Math.random() * 360}, 100%, 50%)` }}>
+        <Avatar className="bg-gray-700 text-amber-50">
           {userImageUrl ? (
             <AvatarImage src={userImageUrl} alt={userUsername} />
           ) : (
